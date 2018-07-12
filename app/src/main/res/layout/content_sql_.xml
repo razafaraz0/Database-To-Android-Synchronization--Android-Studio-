@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Sql_Activity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_sql_">
+
+    <EditText
+        android:id="@+id/editText_sqlite_Name"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white"
+        android:hint="Enter Description"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_sqlite_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/button_sqlite_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="delete" />
+
+        <Button
+            android:id="@+id/button_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Sync" />
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/listView_sqlite"
+        android:layout_centerVertical = "true"
+        android:layout_centerHorizontal = "true" />\
+
+
+</LinearLayout>
